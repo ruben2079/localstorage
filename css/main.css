@@ -1,19 +1,36 @@
 body {
     font: 14px arial;
+	background-color:#aba4a4;
 }
 form#dataEntryForm {
-	width: 800px;
-	padding: 10px;
-	border: 1px solid #ccc;
-	float: left;
+    width: 800px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    margin: 0 auto;
+	position: relative;
+	background-color:#efebeb;
 }
 form#dataEntryForm input[type="text"], form#dataEntryForm input[type="tel"], form#dataEntryForm input[type="email"] {
-	width: 100%;
-	margin-bottom: 20px;
+    margin-bottom: 20px;
+    padding: 5px;
+    clear: both;
+    display: block;
+    border-radius: 5px;
+    background-color: #252e42;
+    color: white;
 }
 fieldset {
-	float: left;
 	border: 1px solid #ccc;
+	display: inline-block;
+	font: bold 12px arial;
+}
+fieldset.personalInfo {
+    width: 190px;
+    top: 10px;
+}
+fieldset.displayDatabase {
+    width: 550px;
+    top: 10px;
 }
 table {
 	border-collapse: collapse;

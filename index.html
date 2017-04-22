@@ -10,15 +10,15 @@
 </head>
 <body>
 	<form name="dataEntryForm" id="dataEntryForm">
-		<fieldset>
+		<fieldset class="personalInfo">
 			<legend>Personal Info</legend>
-			<label for="fname">Name:</label><input name="fname" id="fname" type="text" required /><br />
-			<label for="lname">Last Name: </label><input name="lname" id="lname" type="text" required /><br />
-			<label for="phone">Phone:</label><input name="phone" id="phone" type="tel" required /><br />
-			<label for="email">Email:</label><input name="email" id="email" type="email" required /><br />
+			<label for="fname">Name:</label><input name="fname" id="fname" type="text" required placeholder="John" /><br />
+			<label for="lname">Last Name: </label><input name="lname" id="lname" type="text" placeholder="e.g Johnson" required /><br />
+			<label for="phone">Phone:</label><input name="phone" id="phone" type="tel" placeholder="e.g xxx-xxx-xxxx" required /><br />
+			<label for="email">Email:</label><input name="email" id="email" type="email" placeholder="e.g xxxx@xxxx.com" required /><br />
 			<button onclick="dataEntry.saveData();">submit</button>
 		</fieldset>
-		<fieldset>
+		<fieldset class="displayDatabase">
 			<legend>Database [localstorage]</legend>
 			<div id="databaseContent">
 			</div>

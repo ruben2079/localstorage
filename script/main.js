@@ -29,8 +29,7 @@
 			}
 			localStorage.setItem('dataEntry', JSON.stringify(newArr));
 		}
-		dataEntry.retrieveData();
-		
+		dataEntry.retrieveData();		
 	},
 	retrieveData: ()=> {
 		let obj = JSON.parse(localStorage.getItem('dataEntry')),		
